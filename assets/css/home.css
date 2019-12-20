@@ -1,0 +1,74 @@
+body, html {
+	height: 100%;
+	overflow: hidden;
+}
+
+.background {
+	height: 100%;
+
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/river.jpg");
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.bar {
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	list-style-type: none;
+
+	width: 100%;
+}
+
+.bar a {
+	padding-left: 1vw;
+	padding-right: 1vw;
+	text-decoration: none;
+	font-family: "spectral";
+	color: #fafafa;
+}
+
+.header a {
+	text-align: center;
+	font-size: 20vw;
+}
+
+.socials {
+	display: flex;
+	flex-direction: row;
+}
+
+.socials a {
+	font-size: 10vw;
+}
+
+.nav a {
+	text-align: center;
+	font-size: 8vw;
+}
+
+@media (min-width: 768px) {
+	.bar {
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+		flex-direction: row;
+	}
+
+	.socials a {
+		font-size: 4vw;
+	}
+	
+	.header a {
+		font-size: 5vw;
+	}
+
+	.nav a {
+		font-size: 2vw;
+	}
+}

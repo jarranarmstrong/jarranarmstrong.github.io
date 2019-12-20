@@ -1,0 +1,29 @@
+---
+layout: default
+page: discography
+---
+<div class="discography">
+	<h1>SINGLES</h1>
+	{% for piece in site.singles reversed %}
+		<a href="{{ piece.link }}">
+			<div class="card">
+				<img src="/assets/img/artwork/{{ piece.title }}.jpg">
+				<div class="blurb">
+					<a href="{{ piece.link }}">{{ piece.title }}</a>
+				</div>
+			</div>
+		</a>
+	{% endfor %}
+
+	<h1>CHORAL PIECES</h1>
+	{% for piece in site.chorals reversed %}
+		<a href="{{ piece.link }}">
+			<div class="card">
+				<img src="/assets/img/artwork/{{ piece.title }}.jpg">
+				<div class="blurb">
+					<a href="{{ piece.link }}">{{ piece.title }}</a>
+				</div>
+			</div>
+		</a>
+	{% endfor %}
+</div>

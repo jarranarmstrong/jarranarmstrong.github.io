@@ -1,0 +1,14 @@
+@font-face {
+	font-family: "ptsans";
+	src: url("/assets/fonts/PTSans-Regular.ttf");
+}
+
+@font-face {
+	font-family: "futurabold";
+	src: url("/assets/fonts/Futura Bold.otf");
+}
+
+@font-face {
+	font-family: "spectral";
+	src: url("/assets/fonts/Spectral-Regular.ttf");
+}

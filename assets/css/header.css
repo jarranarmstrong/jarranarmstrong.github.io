@@ -1,0 +1,50 @@
+html, body {
+	background-color: #eeeeee;
+}
+
+.bar {
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	background-color: #eeeeee;
+
+	list-style-type: none;
+
+	width: 100%;
+}
+
+.bar a {
+	padding-left: 1vw;
+	padding-right: 1vw;
+	text-decoration: none;
+	font-family: "spectral";
+	color: #000000;
+}
+
+.socials a {
+	font-size: 8vw;
+	padding-left: 1.5vw;
+	padding-right: 1.5vw;
+}
+
+.header a {
+	font-size: 8vw;
+}
+
+.nav a {
+	font-size: 4vw;
+}
+
+@media (min-width: 768px) {
+	.socials a {
+		font-size: 1.6vw;
+	}
+
+	.header a {
+		font-size: 1.6vw;
+	}
+
+	.nav a {
+		font-size: 1vw;
+	}
+}

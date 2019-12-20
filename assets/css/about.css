@@ -1,0 +1,36 @@
+.about {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+}
+
+.about .pane {
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+}
+
+.pane p {
+	font-family: "spectral";
+	font-size: 5vw;
+	padding: 0;
+	margin: 5px;
+	color: #000000;
+	text-indent: 5%;
+}
+
+@media (min-width: 768px) {
+	.about {
+		flex-direction: row;
+	}
+
+	.about .pane {
+		width: 50%;
+	}
+
+	.pane p {
+		font-size: 1.3vw;
+	}
+}
