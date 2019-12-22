@@ -24,7 +24,6 @@ github_username:  jarranarmstrong
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 

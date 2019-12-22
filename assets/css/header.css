@@ -1,12 +1,12 @@
 html, body {
-	background-color: #eeeeee;
+	background-color: #f6e8dd;
 }
 
 .bar {
 	padding: 0;
 	display: flex;
 	justify-content: center;
-	background-color: #eeeeee;
+	background-color: #f6e8dd;
 
 	list-style-type: none;
 
