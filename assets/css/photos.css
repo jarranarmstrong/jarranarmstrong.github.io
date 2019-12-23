@@ -1,0 +1,78 @@
+.photos {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	justify-content: center;
+}
+
+.photos img {
+	background-color: #f6e8dd;
+	width: 512px;
+	height: 288px;
+
+	margin-left: 2vw;
+	margin-right: 2vw;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+
+	cursor: pointer;
+	transition: 0.4s;
+
+	object-fit: cover;
+
+	/*
+	box-shadow: 0 0 5px #999;
+
+	padding-top: 1vh;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+	padding-bottom: 10vh;
+	*/
+}
+
+.photos img:hover {
+	opacity: 0.7;
+}
+
+
+#modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: #f6e8ddff;
+
+	justify-content: center;
+	align-items: center;
+}
+
+#close-button {
+	font-family: "spectral";
+	position: fixed;
+	top: 0;
+	margin-top: 5vh;
+}
+
+#close-button:hover {
+	cursor: pointer;
+}
+
+#modal img {
+	width: auto;
+	height: auto;
+	max-width: 80%;
+	max-height: 80%;
+}
+
+#modal img:hover {
+	cursor: default;
+	opacity: 1.0;
+}

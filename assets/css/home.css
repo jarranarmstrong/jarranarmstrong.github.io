@@ -1,6 +1,7 @@
 body, html {
 	height: 100%;
 	overflow: hidden;
+	margin: 0;
 }
 
 .background {
@@ -48,9 +49,17 @@ body, html {
 	font-size: 10vw;
 }
 
+.socials a:hover {
+	font-family: "futurabold";
+}
+
 .nav a {
 	text-align: center;
 	font-size: 8vw;
+}
+
+.nav a:hover {
+	font-family: "futurabold";
 }
 
 @media (min-width: 768px) {

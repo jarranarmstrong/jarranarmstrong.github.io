@@ -1,5 +1,6 @@
 html, body {
 	background-color: #f6e8dd;
+	margin: 0;
 }
 
 .bar {
@@ -27,12 +28,20 @@ html, body {
 	padding-right: 1.5vw;
 }
 
+.socials a:hover {
+	font-family: "futurabold";
+}
+
 .header a {
 	font-size: 8vw;
 }
 
 .nav a {
 	font-size: 4vw;
+}
+
+.nav a:hover {
+	font-family: "futurabold";
 }
 
 @media (min-width: 768px) {

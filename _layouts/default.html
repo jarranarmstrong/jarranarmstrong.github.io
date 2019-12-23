@@ -36,9 +36,23 @@
 		<li><a href="mailto:jarranarmstrong17@gmail.com"><i class="fa fa-envelope"></i></a></li>
 	</ul>
 	<ul class="nav bar">
-		<li><a href="/about.html">ABOUT</a></li>
-		<li><a href="/discography.html">DISCOGRAPHY</a></li>
-		<li><a href="/photos.html">PHOTOS</a></li>
+		{% if page.page == "about" %}
+			<li><a style="font-family: 'futurabold'" href="/about.html">ABOUT</a></li>
+		{% else %}
+			<li><a href="/about.html">ABOUT</a></li>
+		{% endif %}
+
+		{% if page.page == "discography" %}
+			<li><a style="font-family: 'futurabold'" href="/discography.html">DISCOGRAPHY</a></li>
+		{% else %}
+			<li><a href="/discography.html">DISCOGRAPHY</a></li>
+		{% endif %}
+
+		{% if page.page == "photos" %}
+			<li><a style="font-family: 'futurabold'" href="/photos.html">PHOTOS</a></li>
+		{% else %}
+			<li><a href="/photos.html">PHOTOS</a></li>
+		{% endif %}
 		<li><a href="/videos.html">VIDEOS</a></li>
 	</ul>
 

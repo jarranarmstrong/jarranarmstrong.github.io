@@ -48,6 +48,14 @@
 	font-size: 5vw;
 }
 
+.blurb p {
+	font-family: "futurabold";
+	color: #000000;
+	text-decoration: none;
+
+	font-size: 5vw;
+}
+
 @media (min-width: 768px) {
 	.discography h1 {
 		font-size: 5vw;
