@@ -3,6 +3,18 @@ html, body {
 	margin: 0;
 }
 
+body {
+	height: 100%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	float: left;
+}
+
 .bar {
 	padding: 0;
 	display: flex;
@@ -44,6 +56,17 @@ html, body {
 	font-family: "futurabold";
 }
 
+.footer {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	border-top: solid;
+	border-top-color: #000000;
+	border-top-width: 1px;
+	margin-top: 5%;
+}
+
 @media (min-width: 768px) {
 	.socials a {
 		font-size: 1.6vw;
@@ -55,5 +78,9 @@ html, body {
 
 	.nav a {
 		font-size: 1vw;
+	}
+
+	.footer {
+		flex-direction: row;
 	}
 }

@@ -4,6 +4,7 @@
 	flex-wrap: wrap;
 
 	justify-content: center;
+	align-items: center;
 }
 
 .photos img {
@@ -54,15 +55,32 @@
 	align-items: center;
 }
 
-#close-button {
+.modal-button {
 	font-family: "spectral";
-	position: fixed;
-	top: 0;
-	margin-top: 5vh;
 }
 
-#close-button:hover {
+.modal-button:hover {
 	cursor: pointer;
+}
+
+#close-button {
+	position: fixed;
+	font-size: 2em;
+	top: 2.5%;
+}
+
+#prev-button {
+	position: fixed;
+	font-size: 5em;
+	top: 0;
+	left: 5%;
+}
+
+#next-button {
+	position: fixed;
+	font-size: 5em;
+	top: 0;
+	right: 5%;
 }
 
 #modal img {
@@ -75,4 +93,14 @@
 #modal img:hover {
 	cursor: default;
 	opacity: 1.0;
+}
+
+@media (min-width: 768px) {
+	#prev-button {
+		top: auto;
+	}
+
+	#next-button {
+		top: auto;
+	}
 }
