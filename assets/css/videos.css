@@ -8,6 +8,9 @@
 .videos iframe {
 	width: 320px;
 	height:180px;
+
+	margin-top: 2vh;
+	margin-bottom: 2vh;
 }
 
 
