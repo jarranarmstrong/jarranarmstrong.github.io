@@ -57,7 +57,12 @@
 		{% else %}
 			<li><a href="/photos.html">PHOTOS</a></li>
 		{% endif %}
-		<li><a href="/videos.html">VIDEOS</a></li>
+
+		{% if page.page == "videos" %}
+			<li><a style="font-family: 'futurabold'" href="/videos.html">VIDEOS</a></li>
+		{% else %}
+			<li><a href="/videos.html">VIDEOS</a></li>
+		{% endif %}
 	</ul>
 
 	{{ content }}
