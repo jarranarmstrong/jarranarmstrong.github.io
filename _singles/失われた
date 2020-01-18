@@ -1,5 +1,6 @@
-layout	title	link
-default
-失われた 
-https://open.spotify.com/track/2HJObher0cEThIX1Tnz3Bd
+---
+layout: default
+title: 失われた 
+link: https://open.spotify.com/track/2HJObher0cEThIX1Tnz3Bd
+---
 2020
