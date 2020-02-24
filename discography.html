@@ -17,9 +17,12 @@ page: discography
 		</a>
 	{% endfor %}
 
+
 	<h1>CHORAL PIECES</h1>
 	{% assign sorted = (site.chorals | sort: 'order') | reverse %}
 	{% for piece in sorted %}
+	<h1>OTHER COMPOSITIONS</h1>
+	{% for piece in site.chorals reversed %}
 		<a href="{{ piece.link }}">
 			<div class="card">
 				<img src="/assets/img/artwork/{{ piece.title }}.jpg">
