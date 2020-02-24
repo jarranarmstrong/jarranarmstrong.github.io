@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jarran Ahaz</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="/assets/css/header.css">
+	<link rel="stylesheet" href="/assets/css/fonts.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+
+	<link rel="stylesheet" href="/assets/css/piece.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body>
+	<div class="header bar">
+		<a href="/index.html">JARRAN AHAZ</a>
+	</div>
+	<ul class="socials bar">
+		<li><a href="https://twitter.com/jarranahaz"><i class="fa fa-twitter"></i></a></li>
+		
+		<li><a href="https://www.instagram.com/jarranahaz/"><i class="fa fa-instagram"></i></a></li>
+		
+		<li><a href="https://open.spotify.com/artist/0i9gGMwqtPFGSujfRriAoR"><i class="fa fa-spotify"></i></a></li>
+
+		<li><a href="https://itunes.apple.com/us/artist/jarran-ahaz/1255276417"><i class="fa fa-apple"></i></a></li>
+
+		<li><a href="https://www.facebook.com/jarranahaz/"><i class="fa fa-facebook"></i></a></li>
+
+		<li><a href="https://www.youtube.com/channel/UCSDFYLvIWvTjBbPFhRYuy6g"><i class="fa fa-youtube"></i></a></li>
+
+		<li><a href="mailto:jarranarmstrong17@gmail.com"><i class="fa fa-envelope"></i></a></li>
+
+	</ul>
+	<ul class="nav bar">
+			<li><a href="/about.html">ABOUT</a></li>
+
+			<li><a href="/discography.html">DISCOGRAPHY</a></li>
+
+			<li><a href="/photos.html">PHOTOS</a></li>
+
+			<li><a href="/videos.html">VIDEOS</a></li>
+	</ul>
+
+	<div class="piece-wrapper">
+		<div class="piece">
+			<h1>{{ page.title }}</h1>
+			<h3>{{ page.year }}</h3>
+			
+			<img src="/assets/img/artwork/{{ page.title }}.jpg">
+		</div>
+		<div class="links">
+			<a href="{{ page.spotify_link }}"><i class="fa fa-spotify"></i> SPOTIFY</a>
+			<a href="{{ page.google_link }}"><i class="fa fa-google"></i> GOOGLE PLAY</a>
+			<a href="{{ page.apple_link }}"><i class="fa fa-apple"></i> APPLE MUSIC</a>
+			<a href="{{ page.amazon_link }}"><i class="fa fa-amazon"></i> AMAZON MUSIC</a>
+		</div>
+	</div>
+
+	<div class="footer bar">
+		<a>SITE DESIGN BY MATT WYATT</a>
+		<a style="margin-right: -1.6vw">CONTACT JARRAN //</a>
+		<a href="mailto:jarranarmstrong17@gmail.com">JARRANARMSTRONG17@GMAIL.COM</a>
+	</div>
+</body>
+</html>
