@@ -4,7 +4,7 @@ page: discography
 ---
 <div class="discography">
 	<h1>SINGLES</h1>
-	{% assign sorted = (site.singles | sort: 'order') | reverse %}
+	{% assign sorted = (site.singles | sort:'order') | reverse %}
 	{% for piece in sorted %}
 		<a href="/singles/{{ piece.title | downcase }}.html">
 			<div class="card">
@@ -18,17 +18,15 @@ page: discography
 	{% endfor %}
 
 
-	<h1>CHORAL PIECES</h1>
-	{% assign sorted = (site.chorals | sort: 'order') | reverse %}
-	{% for piece in sorted %}
 	<h1>OTHER COMPOSITIONS</h1>
-	{% for piece in site.chorals reversed %}
+	{% assign sorted = (site.chorals | sort:'order') | reverse %}
+	{% for piece in sorted %}
 		<a href="{{ piece.link }}">
 			<div class="card">
 				<img src="/assets/img/artwork/{{ piece.title }}.jpg">
 				<div class="blurb">
 					<a href="{{ piece.link }}">{{ piece.title }}</a>
-					<p> {{ piece.content }} </p>
+					<p> {{ piece.year }} </p>
 				</div>
 			</div>
 		</a>
