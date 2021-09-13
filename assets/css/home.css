@@ -1,18 +1,19 @@
 body, html {
 	height: 100%;
+	background-color: #000000;
 	overflow: hidden;
 	margin: 0;
 }
 
-.background {
+.maincontainer {
 	height: 100%;
-
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/river.jpg");
-
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/Is_It_Tomorrow_Cover_Art.JPG");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: relative;
 }
 
 .bar {
@@ -49,10 +50,6 @@ body, html {
 	font-size: 10vw;
 }
 
-.socials a:hover {
-	font-family: "futurabold";
-}
-
 .nav a {
 	text-align: center;
 	font-size: 8vw;
@@ -63,10 +60,46 @@ body, html {
 }
 
 @media (min-width: 768px) {
+	.background {
+		height: 100%;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/Is_It_Tomorrow_Cover_Art.JPG");
+	
+		background-position: center;
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+
+	.maincontainer {
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: left;
+		background-image: none;
+	}
+
+	.background {
+		min-width: 70%;
+		width: 100%;
+		min-height: 100%;
+	
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/Is_It_Tomorrow_Cover_Art.JPG");
+	
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.column {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}	
+
 	.bar {
 		padding-top: 5vh;
 		padding-bottom: 5vh;
-		flex-direction: row;
+		flex-direction: column;
+		justify-content: left;
 	}
 
 	.socials a {
