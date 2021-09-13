@@ -49,8 +49,8 @@
 }
 
 .new-album img {
-	width: 512px;
-	height: 512px;
+	width: 256px;
+	height: 256px;
 }
 
 .blurb {
@@ -76,6 +76,11 @@
 }
 
 @media (min-width: 768px) {
+	.new-album img {
+		width: 512px;
+		height: 512px;
+	}
+
 	.discography h1 {
 		font-size: 5vw;
 	}
