@@ -3,14 +3,24 @@ layout: default
 page: discography
 ---
 <div class="discography">
-	<h1>SINGLES</h1>
+	<h1>is it tomorrow?</h1>
+	<a href="">
+		<div class="new-album">
+			<img src="/assets/img/artwork/ISITTOMORROW.jpg">
+			<div class="blurb">
+				<a href=""></a>
+				<p> coming sept 24, 2021</p>
+			</div>
+		</div>
+	</a>
+	<h1>singles</h1>
 	{% assign sorted = (site.singles | sort:'order') | reverse %}
 	{% for piece in sorted %}
 		<a href="/singles/{{ piece.title | downcase }}.html">
 			<div class="card">
 				<img src="/assets/img/artwork/{{ piece.title }}.jpg">
 				<div class="blurb">
-					<a href="/singles/{{ piece.title | downcase }}.html">{{ piece.title }}</a>
+					<a href="/singles/{{ piece.title | downcase }}.html">{{ piece.title | downcase }}</a>
 					<p> {{ piece.year }} </p>
 				</div>
 			</div>
@@ -18,14 +28,14 @@ page: discography
 	{% endfor %}
 
 
-	<h1>OTHER COMPOSITIONS</h1>
+	<h1>other compositions</h1>
 	{% assign sorted = (site.chorals | sort:'order') | reverse %}
 	{% for piece in sorted %}
 		<a href="{{ piece.link }}">
 			<div class="card">
 				<img src="/assets/img/artwork/{{ piece.title }}.jpg">
 				<div class="blurb">
-					<a href="{{ piece.link }}">{{ piece.title }}</a>
+					<a href="{{ piece.link }}">{{ piece.title | downcase }}</a>
 					<p> {{ piece.year }} </p>
 				</div>
 			</div>

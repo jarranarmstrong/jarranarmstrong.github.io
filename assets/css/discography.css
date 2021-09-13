@@ -10,7 +10,7 @@
 
 .discography h1 {
 	font-family: "futurabold";
-	color: #000000;
+	color: #f6e8dd;
 	width: 100%;
 
 	font-size: 10vw;
@@ -38,6 +38,21 @@
 	opacity: 0.7;
 }
 
+.new-album {
+	display: flex;
+	flex-direction: column;
+
+	margin: 10px;
+
+	justify-content: center;
+	text-align: center;
+}
+
+.new-album img {
+	width: 512px;
+	height: 512px;
+}
+
 .blurb {
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -46,7 +61,7 @@
 
 .blurb a {
 	font-family: "futurabold";
-	color: #000000;
+	color: #f6e8dd;
 	text-decoration: none;
 
 	font-size: 5vw;
@@ -54,7 +69,7 @@
 
 .blurb p {
 	font-family: "futurabold";
-	color: #000000;
+	color: #f6e8dd;
 	text-decoration: none;
 
 	font-size: 5vw;
@@ -75,5 +90,12 @@
 
 	.card p {
 		font-size: 0.8vw;
+	}
+
+	.new-album a {
+		font-size: 1.2vw;
+	}
+	.new-album p {
+		font-size: 1.2vw;
 	}
 }

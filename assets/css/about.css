@@ -17,20 +17,22 @@
 	font-size: 5vw;
 	padding: 0;
 	margin: 5px;
-	color: #000000;
+	color: #f6e8dd;
 	text-indent: 5%;
 }
 
 @media (min-width: 768px) {
 	.about {
 		flex-direction: row;
+		margin-left: 10%;
 	}
 
 	.about .pane {
+		min-width: 50%;
 		width: 50%;
 	}
 
 	.pane p {
-		font-size: 1.3vw;
+		font-size: 1.2vw;
 	}
 }
