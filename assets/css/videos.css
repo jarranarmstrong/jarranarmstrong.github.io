@@ -20,6 +20,7 @@
 @media (min-width: 768px) {
 	.videos {
 		flex-direction: row;
+		justify-content: center;
 	}
 
 	.videos iframe {
