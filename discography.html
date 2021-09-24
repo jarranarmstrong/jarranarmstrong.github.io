@@ -4,15 +4,20 @@ page: discography
 ---
 <div class="discography">
 	<h1>is it tomorrow?</h1>
-	<a href="">
-		<div class="new-album">
+	<h1>OUT NOW</h1>
+	<div class="new-album">
+		<div class="na-pane">
 			<img src="/assets/img/artwork/ISITTOMORROW.jpg">
-			<div class="blurb">
-				<a href=""></a>
-				<p> coming sept 24, 2021</p>
+		</div>
+		<div class="na-pane">
+			<div class="links">
+				<a href="{{ page.spotify_link }}"><i class="fa fa-spotify"></i> SPOTIFY</a>
+				<a href="{{ page.google_link }}"><i class="fa fa-google"></i> GOOGLE PLAY</a>
+				<a href="{{ page.apple_link }}"><i class="fa fa-apple"></i> APPLE MUSIC</a>
+				<a href="{{ page.amazon_link }}"><i class="fa fa-amazon"></i> AMAZON MUSIC</a>
 			</div>
 		</div>
-	</a>
+	</div>
 	<h1>singles</h1>
 	{% assign sorted = (site.singles | sort:'order') | reverse %}
 	{% for piece in sorted %}
