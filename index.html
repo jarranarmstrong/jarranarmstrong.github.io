@@ -1,48 +1,49 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Jarran Ahaz</title>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" href="/assets/css/home.css">
-	<link rel="stylesheet" href="/assets/css/fonts.css">
-
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
-
-</head>
-<body>
-	<div class="maincontainer">
-		<div class="column">
-			<div class="header bar">
-				<a href="/index.html">jarran ahaz</a>
-			</div>
-		
-			<ul class="nav bar">
-				<li><a href="/about.html">about</a></li>
-				<li><a href="/discography.html">discography</a></li>
-				<li><a href="/photos.html">photos</a></li>
-				<li><a href="/videos.html">videos</a></li>
-			</ul>
+---
+layout: default
+page: discography
+---
+<div class="discography">
+	<h1>is it tomorrow?</h1>
+	<h1>OUT NOW</h1>
+	<div class="new-album">
+		<div class="na-pane">
+			<img src="/assets/img/artwork/ISITTOMORROW.jpg">
 		</div>
-		<ul class="socials bar column">
-			<li><a href="https://twitter.com/jarranahaz"><i class="fa fa-twitter"></i></a></li>
-			
-			<li><a href="https://www.instagram.com/jarranahaz/"><i class="fa fa-instagram"></i></a></li>
-			
-			<li><a href="https://open.spotify.com/artist/0i9gGMwqtPFGSujfRriAoR"><i class="fa fa-spotify"></i></a></li>
-		
-			<li><a href="https://itunes.apple.com/us/artist/jarran-ahaz/1255276417"><i class="fa fa-apple"></i></a></li>
-		
-			<li><a href="https://www.facebook.com/jarranahaz/"><i class="fa fa-facebook"></i></a></li>
-		
-			<li><a href="https://www.youtube.com/channel/UCSDFYLvIWvTjBbPFhRYuy6g"><i class="fa fa-youtube"></i></a></li>
-		
-			<li><a href="mailto:JARRANAHAZCONTACT@GMAIL.COM"><i class="fa fa-envelope"></i></a></li>
-			</ul>
-		<div class="background">
+		<div class="na-pane">
+			<div class="links">
+				<a href="https://open.spotify.com/album/0hy3b9H6sy5q4BnnvSvl7V?si=79dTu5xYTLuhUgC8bxpruQ&dl_branch=1"><i class="fa fa-spotify"></i> SPOTIFY</a>
+				<a href="http://itunes.apple.com/album/id1584607290?ls=1&app=itunes"><i class="fa fa-apple"></i> APPLE MUSIC</a>
+				<a href="https://www.amazon.com/gp/product/B09FK4WRSC/ref=dm_ws_sp_ps_dp
+				"><i class="fa fa-amazon"></i> AMAZON MUSIC</a>
+			</div>
 		</div>
 	</div>
-</body>
-</html>
+	<h1>singles</h1>
+	{% assign sorted = (site.singles | sort:'order') | reverse %}
+	{% for piece in sorted %}
+		<a href="/singles/{{ piece.title | downcase }}.html">
+			<div class="card">
+				<img src="/assets/img/artwork/{{ piece.title }}.jpg">
+				<div class="blurb">
+					<a href="/singles/{{ piece.title | downcase }}.html">{{ piece.title | downcase }}</a>
+					<p> {{ piece.year }} </p>
+				</div>
+			</div>
+		</a>
+	{% endfor %}
+
+
+	<h1>other compositions</h1>
+	{% assign sorted = (site.chorals | sort:'order') | reverse %}
+	{% for piece in sorted %}
+		<a href="{{ piece.link }}">
+			<div class="card">
+				<img src="/assets/img/artwork/{{ piece.title }}.jpg">
+				<div class="blurb">
+					<a href="{{ piece.link }}">{{ piece.title | downcase }}</a>
+					<p> {{ piece.year }} </p>
+				</div>
+			</div>
+		</a>
+	{% endfor %}
+</div>
