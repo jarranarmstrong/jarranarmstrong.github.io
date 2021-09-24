@@ -49,10 +49,6 @@ li {
 	font-size: 4vw;
 }
 
-.nav a:hover {
-	font-weight: bold;
-}
-
 .footer {
 	flex-direction: column;
 	align-items: center;

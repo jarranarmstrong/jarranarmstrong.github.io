@@ -55,10 +55,6 @@ body, html {
 	font-size: 8vw;
 }
 
-.nav a:hover {
-	font-family: "futurabold";
-}
-
 @media (min-width: 768px) {
 	.background {
 		height: 100%;

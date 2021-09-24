@@ -8,7 +8,7 @@
 
 .piece h1 {
 	font-family: "futurabold";
-	color: #000000;
+	color: #f6e8dd;
 	width: 100%;
 	margin-bottom: 0;
 
@@ -19,7 +19,7 @@
 .piece h3 {
 	margin-top: 0;
 	font-family: "spectral";
-	color: #000000;
+	color: #f6e8dd;
 	text-decoration: none;
 
 	font-size: 5vw;
@@ -39,15 +39,11 @@
 
 .links a {
 	font-family: "spectral";
-	color: #000000;
+	color: #f6e8dd;
 	text-decoration: none;
 
 	padding: 5px;
 	font-size: 5vw;
-}
-
-.links a:hover {
-	font-family: "futurabold";
 }
 
 @media (min-width: 768px) {
